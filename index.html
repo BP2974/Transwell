@@ -25,12 +25,14 @@
     <!-- css -->
     <link rel='stylesheet' type='text/css' href='./css/reset.css' />
     <link rel='stylesheet' type='text/css' href='./css/index.css' />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet&family=Nanum+Gothic&display=swap" rel="stylesheet"/>
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/index.js"></script>
 
     <title>트랜스웰</title>
@@ -78,22 +80,22 @@
         <div class="background inner">
             <h2 class="subject">Background</h2>
             <p class="subtitle">여행수요 늘면서<br/>항공 운항 취소·변경에 따른 피해 증가</p>
-            <div class="clear">
-                <div class="backgrond_card">
+            <div class="background_card_wrap">
+                <div class="background_card">
                     <ul>
                         <li><img src="./img/background1.png" alt=""/></li>
                         <li><h3>해외여행의 대중화</h3></li>
                         <li class="description">세계 각국의 입국 규정이 완화됨으로<br/>인하여 해외여행의 빈도가 높아지고<br/>있습니다.</li>
                     </ul>
                 </div>
-                <div class="backgrond_card">
+                <div class="background_card">
                     <ul>
                         <li><img src="./img/background2.png" alt=""/></li>
                         <li><h3>입국 전 코로나 검사 폐지로<br/>해외여행 수요 증가</h3></li>
                         <li class="description">코로나19 재확산 추세가 수그러들면서,<br/>세계 각국 정부가 입국 방역 절차를 완화하며<br/>국내에서도 해외여행 수요가 급격히<br/>증가하고 있습니다.</li>
                     </ul>
                 </div>
-                <div class="backgrond_card">
+                <div class="background_card">
                     <ul>
                         <li><img src="./img/background3.png" alt=""/></li>
                         <li><h3>인력 감축 항공사에 소비자 피해 증가</h3></li>
@@ -101,9 +103,12 @@
                     </ul>
                 </div>
             </div>
-            <span class="description">
+
+            <div class="clear"></div>
+
+            <p class="description">
                 환승지 경유를 통한 여행객들의 불편함이 꾸준히 호소되고 있습니다. 경유지의 정보 부족, 수하물 분실 및 파손, 정보 고지 미흡에 따른 미탑승 등 피해를 입는 일이 비일비재한 상황입니다. 이로 인한 피해는 모두 여행객이 오롯이 떠앉는 상황입니다.
-            </span>
+            </p>
         </div>
 
         <div class="survey inner">
@@ -189,43 +194,86 @@
             <h2 class="subject">Keywords</h2>
             <ul>
                 <li>
-                    <ul>
+                    <ul class="keywords_title">
                         <li>Concept Keywords</li>
                         <li>Design Keywords</li>
                         <li>Design Principles</li>
                     </ul>
                 </li>
                 <li>
-                    <ul>
-                        <li>Organized<span>정리된</span></li>
-                        <li>Clean<span>깔끔한</span></li>
+                    <ul class="keywords_list">
+                        <li>Organized<p>정리된</p></li>
+                        <li>Clean<p>깔끔한</p></li>
                         <li>여백 단순함 여백 단숨함 여백 단순함</li>
                     </ul>
                 </li>
                 <li>
-                    <ul>
-                        <li>Easy<span>쉬운</span></li>
-                        <li>Intuitive<span>직관적인</span></li>
+                    <ul class="keywords_list">
+                        <li>Easy<p>쉬운</p></li>
+                        <li>Intuitive<p>직관적인</p></li>
                         <li>규칙적인 디자인 규칙적인 디자인</li>
                     </ul>
                 </li>
                 <li>
-                    <ul>
-                        <li>Distinct<span>또렷한</span></li>
-                        <li>Conspicuous<span>눈에 띄는</span></li>
+                    <ul class="keywords_list">
+                        <li>Distinct<p>또렷한</p></li>
+                        <li>Conspicuous<p>눈에 띄는</p></li>
                         <li>대비되는 컬러 대비되는 컬러</li>
                     </ul>
                 </li>
                 <li>
-                    <ul>
-                        <li>Convenient<span>편리한</span></li>
-                        <li>Useful<span>실용적인</span></li>
+                    <ul class="keywords_list">
+                        <li>Convenient<p>편리한</p></li>
+                        <li>Useful<p>실용적인</p></li>
                         <li>구조적인 UI 구조적인 UI</li>
                     </ul>
                 </li>
             </ul>
         </div>
 
+        <div class="color inner">
+            <h2 class="subject">COLOR GUIDE</h2>
+            <p class="subtitle">여행의 즐거움과<br/>행복을 담아</p>
+            <p class="description">컬러는 두 가지의 주조색을 가지고, 그 외 무채색과 각 주조색의 밝은 색상이 부조색을 이루게 됩니다.<br/>코로나19사태의 완화로 인해 다시 느낄 수 있는 여행의 설렘을 블루와 오렌지를</p>
+            <div class="color_slide">
+                <div>
+                    <p class="color_sub">밝은 햇살을 담은</p>
+                    <h3 class="color_title">SUNLIGHT ORANGE</h3>
+                    <p class="color_detail">
+                        C0% M61% Y96% K0%<br/>
+                        R254 G90 B10<br/>
+                        #FE620A
+                    </p>
+                </div>
+                <div>
+                    <p class="color_sub">공항의 시원함을 담은</p>
+                    <h3 class="color_title">AIRPORT BLUE</h3>
+                    <p class="color_detail">
+                        C100% M45% Y0% K9%<br/>
+                        R1 G129 B233<br/>
+                        #0181E9
+                    </p>
+                </div>
+                <div>
+                    <p class="color_sub">사이니지의 명시성</p>
+                    <h3 class="color_title">EXPLICIT BLACK</h3>
+                    <p class="color_detail">
+                        C0% M0% Y0% K85%<br/>
+                        R39 G39 B39<br/>
+                        #272727
+                    </p>
+                </div>
+                <div>
+                    <p class="color_sub">깔끔하고 담백한</p>
+                    <h3 class="color_title">CLEAR WHITE</h3>
+                    <p class="color_detail">
+                        C0% M0% Y0% K0%<br/>
+                        R255 G255 B255<br/>
+                        #FFFFFF
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

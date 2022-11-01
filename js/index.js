@@ -51,5 +51,9 @@ $(document).ready(function(){
             $(".overview").children(".subject").css('opacity', '1');
             $(".first_span").css('opacity', '1');
         }
+
+        $('.color_slide').slick({
+            dots: true
+        });
     });
 });
