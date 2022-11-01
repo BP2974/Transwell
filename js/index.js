@@ -93,7 +93,52 @@ $(document).ready(function(){
             $(".overview").children(".subject").css('opacity', '1');
             $(".first_span").css('opacity', '1');
         }
-
+        
+        $('.color_btn1').click(function(){
+            $('.color_sub').html("밝은 햇살을 담은");
+            $('.color_title').html('SUNLIGHT ORANGE');
+            $('.color_detail').html('C0% M61% Y96% K0%<br/>R254 G90 B10<br/>#FE620A');
+            $(this).addClass('active');
+            $('.slide').addClass('slide1');
+            $('.slide').removeClass('slide2 slide3 slide4');
+            $('.color_btn2').removeClass('active')
+            $('.color_btn3').removeClass('active')
+            $('.color_btn4').removeClass('active')
+        });
+        $('.color_btn2').click(function(){
+            $('.color_sub').html("공항의 시원함을 담은");
+            $('.color_title').html('AIRPORT BLUE');
+            $('.color_detail').html('C100% M45% Y0% K9%<br/>R1 G129 B233<br/>#0181E9');
+            $(this).addClass('active');
+            $('.slide').addClass('slide2');
+            $('.slide').removeClass('slide1 slide3 slide4');
+            $('.color_btn1').removeClass('active')
+            $('.color_btn3').removeClass('active')
+            $('.color_btn4').removeClass('active')
+        });
+        $('.color_btn3').click(function(){
+            $('.color_sub').html("사이니지의 명시성");
+            $('.color_title').html('EXPLICIT BLACK');
+            $('.color_detail').html('C0% M0% Y0% K85%<br/>R39 G39 B39<br/>#272727');
+            $(this).addClass('active');
+            $('.slide').addClass('slide3');
+            $('.slide').removeClass('slide1 slide2 slide4');
+            $('.color_btn1').removeClass('active')
+            $('.color_btn2').removeClass('active')
+            $('.color_btn4').removeClass('active')
+        });
+        $('.color_btn4').click(function(){
+            $('.color_sub').html("깔끔하고 담백한");
+            $('.color_title').html('CLEAR WHITE');
+            $('.color_detail').html('C0% M0% Y0% K0%<br/>R255 G255 B255<br/>#FFFFFF');
+            $(this).addClass('active');
+            $('.slide').addClass('slide4');
+            $('.slide').removeClass('slide1 slide2 slide3');
+            $('.color_btn1').removeClass('active')
+            $('.color_btn2').removeClass('active')
+            $('.color_btn3').removeClass('active')
+        });
+        
     });
 });
 
