@@ -1,26 +1,23 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-
-        /* gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".h1_img", {
-        scrollTrigger: {
-            trigger: ".trigger",
-            start: "top center",
-            scrub: true,
-        },
-        scale: 0.05, duration: 5,
-        }); */
         
-        console.log($(window).scrollTop())
+        console.log($(window).scrollTop());
 
-        if($(window).scrollTop() > 200)
+        if($(window).scrollTop() > 800)
+        {
+            $('.title_text').css('opacity', '1');
+        } else
+        {
+            $('.title_text').css('opacity', '0');
+        }
+        if($(window).scrollTop() > 1000)
         {
             $('.copy_text1').css('color', '#fff');
         } else
         {
             $('.copy_text1').css('color', 'rgba(255, 255, 255, 0.4)');
         }
-        if($(window).scrollTop() > 400)
+        if($(window).scrollTop() > 1200)
         {
             $('.copy_text2').css('color', '#fff');
             $('.copy_text1').css('color', 'rgba(255, 255, 255, 0.4)');
@@ -28,7 +25,7 @@ $(document).ready(function(){
         {
             $('.copy_text2').css('color', 'rgba(255, 255, 255, 0.4)');
         }
-        if($(window).scrollTop() > 600)
+        if($(window).scrollTop() > 1400)
         {
             $('.copy_text3').css('color', '#fff');
             $('.copy_text2').css('color', 'rgba(255, 255, 255, 0.4)');
@@ -36,7 +33,7 @@ $(document).ready(function(){
         {
             $('.copy_text3').css('color', 'rgba(255, 255, 255, 0.4)');
         }
-        if($(window).scrollTop() > 800)
+        if($(window).scrollTop() > 1600)
         {
             $('.copy_text4>img').css('opacity', '1');
             $('.copy_text3').css('color', 'rgba(255, 255, 255, 0.4)');
@@ -44,7 +41,7 @@ $(document).ready(function(){
         {
             $('.copy_text4>img').css('opacity', '0.4');
         }
-        if($(window).scrollTop() > 1200)
+        if($(window).scrollTop() > 1800)
         {
             $('.title_text').css('margin-top', 'calc(100vw * -800 / 1920)');
         } else
@@ -93,6 +90,18 @@ $(document).ready(function(){
             $(".overview").children(".subject").css('opacity', '1');
             $(".first_span").css('opacity', '1');
         }
+        if(12000 > $(window).scrollTop() && $(window).scrollTop() >= 11600){
+            $('.span1').addClass('middle');
+        }else
+        {
+            $('.span1').removeClass('middle');
+        }
+        if($(window).scrollTop()> 12000){
+            $('.span1').addClass('active');
+        }else
+        {
+            $('.span1').removeClass('active');
+        }
         
         $('.color_btn1').click(function(){
             $('.color_sub').html("밝은 햇살을 담은");
@@ -104,6 +113,8 @@ $(document).ready(function(){
             $('.color_btn2').removeClass('active')
             $('.color_btn3').removeClass('active')
             $('.color_btn4').removeClass('active')
+            $('.color>.subtitle').removeClass('color2');
+            $('.color>.subtitle').addClass('color1');
         });
         $('.color_btn2').click(function(){
             $('.color_sub').html("공항의 시원함을 담은");
@@ -115,6 +126,8 @@ $(document).ready(function(){
             $('.color_btn1').removeClass('active')
             $('.color_btn3').removeClass('active')
             $('.color_btn4').removeClass('active')
+            $('.color>.subtitle').removeClass('color1');
+            $('.color>.subtitle').addClass('color2');
         });
         $('.color_btn3').click(function(){
             $('.color_sub').html("사이니지의 명시성");
@@ -146,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // console.log("ok");
     window.onscroll = function(){
         // console.log(document.querySelector("html").scrollTop);
-        if(document.querySelector("html").scrollTop > 700){
+        if(document.querySelector("html").scrollTop > 1200){
             document.querySelector("header").style.top = "-80px";
         } else {
             document.querySelector("header").style.top = "0";
@@ -154,13 +167,15 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     window.onmousemove = function(e){
         //console.log(e.clientY);
-        if(e.clientY < 100){
-            document.querySelector("header").style.top = "0";
-        } else if(document.querySelector("html").scrollTop > 700) {
-            document.querySelector("header").style.top = "-80px";
-        }
-         else {
-            document.querySelector("header").style.top = "-80px";
-        }
+        if(document.querySelector("html").scrollTop > 700){
+            if(e.clientY < 100){
+                document.querySelector("header").style.top = "0";
+            } else if(document.querySelector("html").scrollTop > 1200) {
+                document.querySelector("header").style.top = "-80px";
+            }
+             else {
+                document.querySelector("header").style.top = "-80px";
+            }
+        } 
     }
 });
