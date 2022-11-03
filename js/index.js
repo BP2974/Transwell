@@ -90,18 +90,67 @@ $(document).ready(function(){
             $(".overview").children(".subject").css('opacity', '1');
             $(".first_span").css('opacity', '1');
         }
-        if(12000 > $(window).scrollTop() && $(window).scrollTop() >= 11600){
-            $('.span1').addClass('middle');
+
+        if($(window).scrollTop() >= 18300){
+            $('.splash_mockup_img1').addClass('active');
+            $('.splash_mockup_img2').addClass('active');
+            $('.splash_mockup_img4').addClass('active');
+            $('.splash_mockup_img5').addClass('active');
         }else
         {
-            $('.span1').removeClass('middle');
+            $('.splash_mockup_img1').removeClass('active');
+            $('.splash_mockup_img2').removeClass('active');
+            $('.splash_mockup_img4').removeClass('active');
+            $('.splash_mockup_img5').removeClass('active');
         }
-        if($(window).scrollTop()> 12000){
-            $('.span1').addClass('active');
+        
+        if(21100 > $(window).scrollTop() && $(window).scrollTop() >= 20500){
+            $('.short_span.span1').addClass('middle');
+            $('shortest_mockup_img1').css('opacity', '1');
+            $('shortest_mockup_img2').css('opacity', '0');
         }else
         {
-            $('.span1').removeClass('active');
+            $('.short_span.span1').removeClass('middle');
         }
+        if($(window).scrollTop() >= 21100){
+            $('.short_span.span1').addClass('active');
+            $('shortest_mockup_img1').css('opacity', '0');
+            $('shortest_mockup_img2').css('opacity', '1');
+        }else
+        {
+            $('.short_span.span1').removeClass('active');
+        }
+
+        if(22200 > $(window).scrollTop() && $(window).scrollTop() >= 21500){
+            $('.short_span.span2').addClass('middle');
+            $('shortest_mockup_img2').css('opacity', '1');
+            $('shortest_mockup_img3').css('opacity', '0');
+        }else
+        {
+            $('.short_span.span2').removeClass('middle');
+        }
+        if($(window).scrollTop() >= 22200){
+            $('.short_span.span2').addClass('active');
+            $('shortest_mockup_img2').css('opacity', '0');
+            $('shortest_mockup_img3').css('opacity', '1');
+        }else
+        {
+            $('.short_span.span2').removeClass('active');
+        }
+
+        if(23100 > $(window).scrollTop() && $(window).scrollTop() >= 22500){
+            $('.short_span.span3').addClass('middle');
+        }else
+        {
+            $('.short_span.span1').removeClass('middle');
+        }
+        if($(window).scrollTop() >= 23100){
+            $('.short_span.span1').addClass('active');
+        }else
+        {
+            $('.short_span.span1').removeClass('active');
+        }
+        
         
         $('.color_btn1').click(function(){
             $('.color_sub').html("밝은 햇살을 담은");
