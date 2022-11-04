@@ -38,11 +38,11 @@ nav ul li a:hover { padding: 13px 0; border-bottom: 4px solid #0181E9; }
 
 
 /* planning */
-#planning { padding-top: calc(100vw * 22 / 1920); }
-#planning h2 { color: #272727; margin-top: calc(100vw * 46 / 1920); margin-bottom: calc(100vw * 20 / 1920); }
+#planning { padding-top: calc(100vw * 10 / 1920); }
+#planning h2 { color: #272727; margin-top: calc(100vw * 20 / 1920); margin-bottom: calc(100vw * 20 / 1920); }
 
 
-#planning .suggest { margin: calc(100vw * 280 / 1920) auto; text-align: center; }
+#planning .suggest { margin: calc(100vw * 300 / 1920) auto calc(100vw * 320 / 1920); text-align: center; }
 #planning .suggest h2 { margin-top: calc(100vw * 40 / 1920); font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 80 / 1920); color: #272727; }
 #planning .suggest .description { margin-top: calc(100vw * 40 / 1920); }
 
