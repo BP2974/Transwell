@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    
+
+    /* aos 캐쉬 */
     AOS.init({
         once: true,
     });
@@ -18,8 +19,12 @@ $(document).ready(function(){
         }
     })
     $(window).scroll(function(){
+
+        var ratio1 = 1/1920 * window.innerWidth;
+        /* var ratio2 = 1/1080*document.documentElement.clientHeight;
+        var ratio3 = (ratio1*ratio2) ; */
         
-        console.log($(window).scrollTop());
+        console.log($(window).scrollTop() * ratio1);
 
         if($(window).scrollTop() > 800)
         {
@@ -30,21 +35,21 @@ $(document).ready(function(){
         }
 
         /* 타이틀 */
-        if($(window).scrollTop() > 800)
+        if($(window).scrollTop() > 800 * ratio1)
         {
             $('.title_text').css('opacity', '1');
         } else
         {
             $('.title_text').css('opacity', '0');
         }
-        if($(window).scrollTop() > 1000)
+        if($(window).scrollTop() > 1000 * ratio1)
         {
             $('.copy_text1').css('color', '#fff');
         } else
         {
             $('.copy_text1').css('color', 'rgba(255, 255, 255, 0.4)');
         }
-        if($(window).scrollTop() > 1200)
+        if($(window).scrollTop() > 1200 * ratio1)
         {
             $('.copy_text2').css('color', '#fff');
             $('.copy_text1').css('color', 'rgba(255, 255, 255, 0.4)');
@@ -52,7 +57,7 @@ $(document).ready(function(){
         {
             $('.copy_text2').css('color', 'rgba(255, 255, 255, 0.4)');
         }
-        if($(window).scrollTop() > 1400)
+        if($(window).scrollTop() > 1400 * ratio1)
         {
             $('.copy_text3').css('color', '#fff');
             $('.copy_text2').css('color', 'rgba(255, 255, 255, 0.4)');
@@ -60,7 +65,7 @@ $(document).ready(function(){
         {
             $('.copy_text3').css('color', 'rgba(255, 255, 255, 0.4)');
         }
-        if($(window).scrollTop() > 1600)
+        if($(window).scrollTop() > 1600 * ratio1)
         {
             $('.copy_text4>img').css('opacity', '1');
             $('.copy_text3').css('color', 'rgba(255, 255, 255, 0.4)');
@@ -68,7 +73,7 @@ $(document).ready(function(){
         {
             $('.copy_text4>img').css('opacity', '0.4');
         }
-        if($(window).scrollTop() > 1800)
+        if($(window).scrollTop() > 1800 * ratio1)
         {
             $('.title_text').css('margin-top', 'calc(100vw * -800 / 1920)');
         } else
@@ -118,8 +123,9 @@ $(document).ready(function(){
             $(".first_span").css('opacity', '1');
         } */
 
+        
         /* 스플래시 */
-        if($(window).scrollTop() >= 18300){
+        if($(window).scrollTop() >= 16200 * ratio1){
             $('.splash_mockup_img1').addClass('active');
             $('.splash_mockup_img2').addClass('active');
             $('.splash_mockup_img4').addClass('active');
@@ -134,20 +140,20 @@ $(document).ready(function(){
         
 
         /* 최단 목업 */
-        if(20800 > $(window).scrollTop() && $(window).scrollTop() >= 20100){
+        if(18900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 18100 * ratio1){
             $('.short_span.span1').addClass('middle');
         }else
         {
             $('.short_span.span1').removeClass('middle');
         }
-        if($(window).scrollTop() >= 20800){
+        if($(window).scrollTop() >= 18900 * ratio1){
             $('.short_span.span1').addClass('active');
         }else
         {
             $('.short_span.span1').removeClass('active');
         }
 
-        if($(window).scrollTop() >= 21150){
+        if($(window).scrollTop() >= 19100 * ratio1){
             $('.shortest_mockup.img1').css('opacity', '0');
             $('.shortest_mockup.img2').css('opacity', '1');
             $('.shortest_mockup_text.text1').css('opacity', '0');
@@ -160,20 +166,20 @@ $(document).ready(function(){
             $('.shortest_mockup_text.text2').css('opacity', '0');
         }
 
-        if(21850 > $(window).scrollTop() && $(window).scrollTop() >= 21150){
+        if(19900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 19100 * ratio1){
             $('.short_span.span2').addClass('middle');
         }else
         {
             $('.short_span.span2').removeClass('middle');
         }
-        if($(window).scrollTop() >= 21850){
+        if($(window).scrollTop() >= 19900 * ratio1){
             $('.short_span.span2').addClass('active');
         }else
         {
             $('.short_span.span2').removeClass('active');
         }
 
-        if( $(window).scrollTop() >= 22200){
+        if( $(window).scrollTop() >= 20100 * ratio1){
             $('.shortest_mockup.img2').css('opacity', '0');
             $('.shortest_mockup.img3').css('opacity', '1');
             $('.shortest_mockup_text.text2').css('opacity', '0');
@@ -184,13 +190,13 @@ $(document).ready(function(){
             $('.shortest_mockup_text.text3').css('opacity', '0');
         }
 
-        if(22900 > $(window).scrollTop() && $(window).scrollTop() >= 22200){
+        if(20900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 20100 * ratio1){
             $('.short_span.span3').addClass('middle');
         }else
         {
             $('.short_span.span3').removeClass('middle');
         }
-        if($(window).scrollTop() >= 22900){
+        if($(window).scrollTop() >= 20900 * ratio1){
             $('.short_span.span3').addClass('active');
         }else
         {
@@ -199,13 +205,13 @@ $(document).ready(function(){
         
 
         /* 맞춤 목업 */
-        if(24800 > $(window).scrollTop() && $(window).scrollTop() >= 23800){
+        if(22900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 22100 * ratio1){
             $('.suggestion_span.span1').addClass('middle');
         }else
         {
             $('.suggestion_span.span1').removeClass('middle');
         }
-        if($(window).scrollTop() >= 24800){
+        if($(window).scrollTop() >= 22900 * ratio1){
             $('.suggestion_span.span1').addClass('active');
             
         }else
@@ -214,7 +220,7 @@ $(document).ready(function(){
             
         }
 
-        if($(window).scrollTop() >= 24800){
+        if($(window).scrollTop() >= 23100 * ratio1){
             $('.custom_mockup.img1').css('opacity', '0');
             $('.custom_mockup.img2').css('opacity', '1');
             $('.custom_mockup_text.text1').css('opacity', '0');
@@ -227,13 +233,13 @@ $(document).ready(function(){
             $('.custom_mockup_text.text2').css('opacity', '0');
         }
 
-        if(25800 > $(window).scrollTop() && $(window).scrollTop() >= 25000){
+        if(23900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 23100 * ratio1){
             $('.suggestion_span.span2').addClass('middle');
         }else
         {
             $('.suggestion_span.span2').removeClass('middle');
         }
-        if($(window).scrollTop() >= 25800){
+        if($(window).scrollTop() >= 23900 * ratio1){
             $('.suggestion_span.span2').addClass('active');
             
         }else
@@ -241,7 +247,7 @@ $(document).ready(function(){
             $('.suggestion_span.span2').removeClass('active');
         }
 
-        if($(window).scrollTop() >= 25800){
+        if($(window).scrollTop() >= 24100 * ratio1){
             $('.custom_mockup.img2').css('opacity', '0');
             $('.custom_mockup.img3').css('opacity', '1');
             $('.custom_mockup_text.text2').css('opacity', '0');
@@ -252,22 +258,22 @@ $(document).ready(function(){
             $('.custom_mockup_text.text3').css('opacity', '0');
         }
 
-        if(26800 > $(window).scrollTop() && $(window).scrollTop() >= 26100){
+        if(24900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 24100 * ratio1){
             $('.suggestion_span.span3').addClass('middle');
         }else
         {
             $('.suggestion_span.span3').removeClass('middle');
         }
 
-        if($(window).scrollTop() >= 26800){
+        if($(window).scrollTop() >= 24900 * ratio1){
             $('.suggestion_span.span3').addClass('active');
         }else
         {
             $('.suggestion_span.span3').removeClass('active');
         }
-
+        /* console.log(31900*ratio1) */
         /* offline */
-        if($(window).scrollTop() >= 31900){
+        if($(window).scrollTop() >= 30100 * ratio1){
             $('.offline_wave').css('animation', 'wave 1s forwards');
         } else {
             $('.offline_wave').css('animation', 'none');
