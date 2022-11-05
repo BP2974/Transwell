@@ -1,5 +1,12 @@
 $(document).ready(function(){
-    AOS.init();
+    
+    AOS.init({
+        once: true,
+    });
+    $(window).on('load', function () {
+        AOS.refresh();
+    });
+
     $(document).mousemove(function(e){
         if($(window).scrollTop() > 800 && e.clientY < 100){
             $('header').css('top', '0')

@@ -207,9 +207,9 @@ nav ul li a:hover { padding: 13px 0; border-bottom: 4px solid #0181E9; }
 
 /* video */
 #video { padding-top: calc(100vw * 90 / 1920); }
-#video div { text-align: center;}
-#video div img { width: calc(100vw * 88 / 1920);}
-#video div .description { margin-top: calc(100vw * 40 / 1920); margin-bottom: calc(100vw * 180 / 1920);}
+#video section { text-align: center;}
+#video section img { width: calc(100vw * 88 / 1920);}
+#video section .description { margin-top: calc(100vw * 40 / 1920); margin-bottom: calc(100vw * 180 / 1920);}
 #video iframe { width: 100vw; height: calc(100vw * 980 / 1920);}
 
 /* service */
