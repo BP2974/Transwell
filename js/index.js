@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    AOS.init();
     $(document).mousemove(function(e){
         if($(window).scrollTop() > 1200 && e.clientY < 100){
             $('header').css('top', '0')
