@@ -239,13 +239,13 @@ nav ul li a:hover { padding: 13px 0; border-bottom: 4px solid #0181E9; }
 .shortest img { margin: 0 auto; }
 .shortest .shortest_copy { width: calc(100vw * 500 / 1920); margin: 0 auto; font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 80 / 1920); line-height: 116.34%; text-align: center; background: linear-gradient(100.79deg, #0181E9 0%, #01DBE9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .shortest .shortest_title { margin-top: calc(100vw * 20 / 1920); font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 60 / 1920); text-align: center; color: #272727;}
-.shortest .shortest_introduction { margin-top: calc(100vw * 333 / 1920); position: relative; height: calc(100vw * 2750 / 1920); }
+.shortest .shortest_introduction { margin-top: calc(100vw * 420 / 1920); position: relative; height: calc(100vw * 2750 / 1920); }
 .shortest .shortest_introduction .shortest_mockup { position: sticky; top: 13%; right: 0; height: calc(100vw * 700 / 1920);}
 .shortest .shortest_introduction .shortest_mockup img { position: absolute; width: calc(100vw * 399 / 1920); height: calc(100vw * 768 / 1920); top: calc(100vw * -36 / 1920); right: calc(100vw * -30 / 1920); transition: all 0.5s; }
 .shortest .shortest_introduction .shortest_mockup.img2 { opacity: 0; }
 .shortest .shortest_introduction .shortest_mockup.img3 { opacity: 0; }
 .shortest .shortest_introduction .shortest_mockup .shortest_mockup_line { position: absolute; width: calc(100vw * 250 / 1920); height: calc(100vw * 2 / 1920); top: calc(100vw * 735 / 1920); right: calc(100vw * 44 / 1920); }
-.shortest .shortest_introduction .shortest_mockup .shortest_mockup_text { position: absolute; top: calc(100vw * 745 / 1920); text-align: center; font-family: 'Pretendard'; font-weight: 600; font-size: calc(100vw * 14 / 1920); color: #747474; }
+.shortest .shortest_introduction .shortest_mockup .shortest_mockup_text { position: absolute; top: calc(100vw * 745 / 1920); text-align: center; font-family: 'Pretendard'; font-weight: 600; font-size: calc(100vw * 14 / 1920); color: #747474; transition: all .5s; }
 .shortest .short_main { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 80 / 1920); margin-bottom: calc(100vw * 130 / 1920); }
 .shortest .short_main span { color: #0181E9; }
 .shortest .shortest_introduction .shortest_mockup .shortest_mockup_text.text1 { right: calc(100vw * 70 / 1920); opacity: 1;}
@@ -266,18 +266,18 @@ nav ul li a:hover { padding: 13px 0; border-bottom: 4px solid #0181E9; }
 .shortest .short3 { position: absolute; top: calc(100vw * 2100 / 1920); }
 
 
-.custom { margin-top: calc(100vw * 304 / 1920); }
+.custom { margin-top: calc(100vw * 450 / 1920); }
 .custom img { margin: 0 auto; }
 .custom .custom_copy { width: calc(100vw * 550 / 1920); margin: 0 auto; font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 80 / 1920); line-height: 116.34%; text-align: center; background: linear-gradient(85deg, #FE620A 0%, #FEBA0A 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .custom .custom_title { margin-top: calc(100vw * 20 / 1920); font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 60 / 1920); text-align: center; color: #272727;}
-.custom .custom_introduction { margin-top: calc(100vw * 333 / 1920); position: relative; height: calc(100vw * 2740 / 1920); }
+.custom .custom_introduction { margin-top: calc(100vw * 420 / 1920); position: relative; height: calc(100vw * 2740 / 1920); }
 .custom .mockup_subtitle { text-align: right; }
 .custom .custom_introduction .custom_mockup { position: sticky; top: 13%; left: 0; height: calc(100vw * 700 / 1920); }
 .custom .custom_introduction .custom_mockup img { position: absolute; width: calc(100vw * 399 / 1920); height: calc(100vw * 768 / 1920); top: calc(100vw * -36 / 1920); left: calc(100vw * -30 / 1920); opacity: 1; transition: all 0.5s; }
 .custom .custom_introduction .custom_mockup.img2 { opacity: 0; }
 .custom .custom_introduction .custom_mockup.img3 { opacity: 0; }
 .custom .custom_introduction .custom_mockup .custom_mockup_line { position: absolute; width: calc(100vw * 250 / 1920); height: calc(100vw * 2 /1920); top: calc(100vw * 735 / 1920); left: calc(100vw * 44 / 1920); }
-.custom .custom_introduction .custom_mockup .custom_mockup_text { position: absolute; top: calc(100vw * 745 / 1920); text-align: center; font-family: 'Pretendard'; font-weight: 600; font-size: calc(100vw * 14 / 1920); color: #747474; }
+.custom .custom_introduction .custom_mockup .custom_mockup_text { position: absolute; top: calc(100vw * 745 / 1920); text-align: center; font-family: 'Pretendard'; font-weight: 600; font-size: calc(100vw * 14 / 1920); color: #747474; transition: all .5s; }
 .custom .suggestion_main { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 80 / 1920); margin-bottom: calc(100vw * 130 / 1920); text-align: right; }
 .custom .suggestion_main span { color: #FE620A; }
 .custom .custom_introduction .custom_mockup .custom_mockup_text.text1 { left: calc(100vw * 78 / 1920); opacity: 1;}
@@ -309,7 +309,7 @@ nav ul li a:hover { padding: 13px 0; border-bottom: 4px solid #0181E9; }
 .information .locate_text { font-family: 'Pretendard'; font-weight: 600; font-size: calc(100vw * 14 / 1920); line-height: 140%; text-align: center; color: #747474; }
 .information .information_locate1 { position: absolute; top: calc(100vw * 90 / 1920); left: calc(100vw * 203 / 1920);}
 .information .information_locate1 .locate_phone { position: absolute; top: 0; left: 0; margin-top: calc(100vw * -75 / 1920); margin-left: calc(100vw * -75 / 1920); }
-.information .locate1 .locate_line { position: absolute; top: calc(100vw * 700 / 1920); left: calc(100vw * 0 / 1920); }
+.information .information_locate1 .locate_line { position: absolute; top: calc(100vw * 700 / 1920); left: calc(100vw * 0 / 1920); }
 .information .information_locate1 .locate_text { position: absolute; width: calc(100vw * 399 / 1920); top: calc(100vw * 720 / 1920); left: calc(100vw * -73 / 1920); }
 .information .information_locate2 { position: absolute; top: calc(100vw * 430 / 1920); right: calc(100vw * 203 / 1920);} 
 .information .information_locate2 .locate_phone { position: absolute; top: 0; right: 0; margin-top: calc(100vw * -75 / 1920); margin-right: calc(100vw * -75 / 1920);}
