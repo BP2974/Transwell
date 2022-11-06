@@ -125,7 +125,7 @@ $(document).ready(function(){
 
         
         /* 스플래시 */
-        if($(window).scrollTop() >= 16200 * ratio1){
+        if($(window).scrollTop() >= 17200 * ratio1){
             $('.splash_mockup_img1').addClass('active');
             $('.splash_mockup_img2').addClass('active');
             $('.splash_mockup_img4').addClass('active');
@@ -140,20 +140,20 @@ $(document).ready(function(){
         
 
         /* 최단 목업 */
-        if(18900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 18100 * ratio1){
+        if(12000 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 19300 * ratio1){
             $('.short_span.span1').addClass('middle');
         }else
         {
             $('.short_span.span1').removeClass('middle');
         }
-        if($(window).scrollTop() >= 18900 * ratio1){
+        if($(window).scrollTop() >= 12000 * ratio1){
             $('.short_span.span1').addClass('active');
         }else
         {
             $('.short_span.span1').removeClass('active');
         }
 
-        if($(window).scrollTop() >= 19100 * ratio1){
+        if($(window).scrollTop() >= 20300 * ratio1){
             $('.shortest_mockup.img1').css('opacity', '0');
             $('.shortest_mockup.img2').css('opacity', '1');
             $('.shortest_mockup_text.text1').css('opacity', '0');
@@ -166,20 +166,20 @@ $(document).ready(function(){
             $('.shortest_mockup_text.text2').css('opacity', '0');
         }
 
-        if(19900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 19100 * ratio1){
+        if(21000 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 20300 * ratio1){
             $('.short_span.span2').addClass('middle');
         }else
         {
             $('.short_span.span2').removeClass('middle');
         }
-        if($(window).scrollTop() >= 19900 * ratio1){
+        if($(window).scrollTop() >= 21000 * ratio1){
             $('.short_span.span2').addClass('active');
         }else
         {
             $('.short_span.span2').removeClass('active');
         }
 
-        if( $(window).scrollTop() >= 20100 * ratio1){
+        if( $(window).scrollTop() >= 21300 * ratio1){
             $('.shortest_mockup.img2').css('opacity', '0');
             $('.shortest_mockup.img3').css('opacity', '1');
             $('.shortest_mockup_text.text2').css('opacity', '0');
@@ -190,13 +190,13 @@ $(document).ready(function(){
             $('.shortest_mockup_text.text3').css('opacity', '0');
         }
 
-        if(20900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 20100 * ratio1){
+        if(22000 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 21300 * ratio1){
             $('.short_span.span3').addClass('middle');
         }else
         {
             $('.short_span.span3').removeClass('middle');
         }
-        if($(window).scrollTop() >= 20900 * ratio1){
+        if($(window).scrollTop() >= 22000 * ratio1){
             $('.short_span.span3').addClass('active');
         }else
         {
@@ -205,13 +205,13 @@ $(document).ready(function(){
         
 
         /* 맞춤 목업 */
-        if(22900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 22100 * ratio1){
+        if(24000 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 23300 * ratio1){
             $('.suggestion_span.span1').addClass('middle');
         }else
         {
             $('.suggestion_span.span1').removeClass('middle');
         }
-        if($(window).scrollTop() >= 22900 * ratio1){
+        if($(window).scrollTop() >= 24000 * ratio1){
             $('.suggestion_span.span1').addClass('active');
             
         }else
@@ -220,7 +220,7 @@ $(document).ready(function(){
             
         }
 
-        if($(window).scrollTop() >= 23100 * ratio1){
+        if($(window).scrollTop() >= 24300 * ratio1){
             $('.custom_mockup.img1').css('opacity', '0');
             $('.custom_mockup.img2').css('opacity', '1');
             $('.custom_mockup_text.text1').css('opacity', '0');
@@ -233,13 +233,13 @@ $(document).ready(function(){
             $('.custom_mockup_text.text2').css('opacity', '0');
         }
 
-        if(23900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 23100 * ratio1){
+        if(25000 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 24300 * ratio1){
             $('.suggestion_span.span2').addClass('middle');
         }else
         {
             $('.suggestion_span.span2').removeClass('middle');
         }
-        if($(window).scrollTop() >= 23900 * ratio1){
+        if($(window).scrollTop() >= 25000 * ratio1){
             $('.suggestion_span.span2').addClass('active');
             
         }else
@@ -247,7 +247,7 @@ $(document).ready(function(){
             $('.suggestion_span.span2').removeClass('active');
         }
 
-        if($(window).scrollTop() >= 24100 * ratio1){
+        if($(window).scrollTop() >= 25300 * ratio1){
             $('.custom_mockup.img2').css('opacity', '0');
             $('.custom_mockup.img3').css('opacity', '1');
             $('.custom_mockup_text.text2').css('opacity', '0');
@@ -258,14 +258,14 @@ $(document).ready(function(){
             $('.custom_mockup_text.text3').css('opacity', '0');
         }
 
-        if(24900 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 24100 * ratio1){
+        if(26000 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 25300 * ratio1){
             $('.suggestion_span.span3').addClass('middle');
         }else
         {
             $('.suggestion_span.span3').removeClass('middle');
         }
 
-        if($(window).scrollTop() >= 24900 * ratio1){
+        if($(window).scrollTop() >= 26000 * ratio1){
             $('.suggestion_span.span3').addClass('active');
         }else
         {
@@ -273,7 +273,7 @@ $(document).ready(function(){
         }
         /* console.log(31900*ratio1) */
         /* offline */
-        if($(window).scrollTop() >= 30100 * ratio1){
+        if($(window).scrollTop() >= 31100 * ratio1){
             $('.offline_wave').css('animation', 'wave 1s forwards');
         } else {
             $('.offline_wave').css('animation', 'none');
