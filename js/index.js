@@ -140,13 +140,13 @@ $(document).ready(function(){
         
 
         /* 최단 목업 */
-        if(12000 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 19300 * ratio1){
+        if(20000 * ratio1 > $(window).scrollTop() && $(window).scrollTop() >= 19300 * ratio1){
             $('.short_span.span1').addClass('middle');
         }else
         {
             $('.short_span.span1').removeClass('middle');
         }
-        if($(window).scrollTop() >= 12000 * ratio1){
+        if($(window).scrollTop() >= 20000 * ratio1){
             $('.short_span.span1').addClass('active');
         }else
         {
