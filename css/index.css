@@ -415,10 +415,9 @@ footer .footer_left .sources a:link { color: #fff; }
 footer .footer_left .sources a:visited { color: #fff; }
 footer .footer_left .sources a:hover { color: #fff; }
 footer .footer_left .sources a:active { color: #fff; }
-footer .footer_right ul { margin-top: calc(100vw * 30 / 1920); }
 footer .footer_right ul li:nth-of-type(1) { font-family: 'Pretendard'; font-weight: 500; font-size: calc(100vw * 18 / 1920); margin-bottom: calc(100vw * 23 / 1920);}
 footer .footer_right ul li { font-family: 'Pretendard'; font-weight: 200; font-size: calc(100vw * 14 / 1920); margin-bottom: calc(100vw * 5 / 1920); }
-footer .footer_right .designer { position: absolute; top: calc(100vw * 140 / 1920); right: calc(100vw * 650 / 1920); }
-footer .footer_right .programmer { position: absolute; top: calc(100vw * 140 / 1920); right: calc(100vw * 388 / 1920); }
+footer .footer_right .designer { position: absolute; top: calc(100vw * 150 / 1920); right: calc(100vw * 650 / 1920); }
+footer .footer_right .programmer { position: absolute; top: calc(100vw * 150 / 1920); right: calc(100vw * 388 / 1920); }
 footer .footer_line { position: absolute; bottom: calc(100vw * 70 / 1920); width: calc(100vw * 1200 / 1920); border-top: calc(100vw * 1 / 1920) solid #fff; }
 footer .footer_bottom>p { position: absolute; bottom: calc(100vw * 30 / 1920); font-family: 'Pretendard'; font-weight: 400; font-size: calc(100vw * 14 / 1920); color: #DDDDDD;}
