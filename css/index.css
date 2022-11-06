@@ -19,9 +19,9 @@ ol,ul { list-style: none; }
 /* header */
 header { width: 100vw; height: calc(100vw * 55 / 1920); position: fixed; box-sizing: border-box;  background: rgba(255, 255, 255, 0.438); z-index: 3; transition: all .7s; top: 0; }
 nav { display: flex; justify-content: space-between; }
-nav h1 { height: calc(100vw * 32 / 1920); transition: all 1s; transform-origin: -30%, -30%;}
-nav h1 a { margin-top: calc(100vw * 10 / 1920); height: calc(100vw * 32 / 1920); width: calc(100vw * 32 / 1920); position: absolute;}
-nav img { transform-origin: top left; }
+nav h1 { height: calc(100vw * 22 / 1920); transition: all 1s; transform-origin: -30%, -30%;}
+nav h1 a { margin-top: calc(100vw * 10 / 1920); height: calc(100vw * 22 / 1920); position: absolute;}
+nav h1 a img { height: calc(100vw * 22 / 1920); }
 nav li { box-sizing: border-box; display: inline-block; padding: calc(100vw * 14 / 1920) calc(100vw * 20 / 1920); font-size: calc(100vw * 20 / 1920); font-family: 'Pretendard'; }
 nav ul li a:hover { padding: calc(100vw * 13 / 1920) 0; border-bottom: calc(100vw * 4 / 1920) solid #0181E9; }
 
@@ -244,7 +244,7 @@ nav ul li a:hover { padding: calc(100vw * 13 / 1920) 0; border-bottom: calc(100v
 .shortest .shortest_introduction .shortest_mockup.img2 { opacity: 0; }
 .shortest .shortest_introduction .shortest_mockup.img3 { opacity: 0; }
 .shortest .shortest_introduction .shortest_mockup .shortest_mockup_line { position: absolute; width: calc(100vw * 250 / 1920); height: calc(100vw * 2 / 1920); top: calc(100vw * 735 / 1920); right: calc(100vw * 44 / 1920); }
-.shortest .shortest_introduction .shortest_mockup .shortest_mockup_text { position: absolute; top: calc(100vw * 745 / 1920); text-align: center; font-family: 'Pretendard'; font-weight: 600; font-size: calc(100vw * 14 / 1920); color: #747474; transition: all .5s; }
+.shortest .shortest_introduction .shortest_mockup .shortest_mockup_text { position: absolute; top: calc(100vw * 745 / 1920); text-align: center; font-family: 'Pretendard'; font-weight: 600; font-size: calc(100vw * 14 / 1920); line-height: 140%; color: #747474; transition: all .5s; }
 .shortest .short_main { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 80 / 1920); margin-bottom: calc(100vw * 130 / 1920); }
 .shortest .short_main span { color: #0181E9; }
 .shortest .shortest_introduction .shortest_mockup .shortest_mockup_text.text1 { right: calc(100vw * 70 / 1920); opacity: 1;}
