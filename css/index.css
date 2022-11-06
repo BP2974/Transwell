@@ -254,7 +254,7 @@ nav ul li a:hover { padding: calc(100vw * 13 / 1920) 0; border-bottom: calc(100v
 .shortest .shortest_introduction .short2 { width: 100vw; height: 100vh;}
 .shortest .shortest_introduction .short3 { width: 100vw; height: 100vh;}
 .shortest .short_title { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 38 / 1920); color: #272727; }
-.shortest .short_info { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 20 / 1920); color: #969696; margin-top: calc(100vw * 20 / 1920); margin-bottom: calc(100vw * 440 / 1920); }
+.shortest .short_info { color: #969696; margin-top: calc(100vw * 20 / 1920); margin-bottom: calc(100vw * 440 / 1920); }
 .shortest .short_info:nth-last-of-type(1) { margin-bottom: calc(100vw * 180 / 1920);}
 .shortest .short_span { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 700 / 1920); letter-spacing: calc(100vw * 25 / 1920); color: rgba(1, 129, 233, 0.05); position: absolute; transform: translateX(calc(100vw * 1800 / 1920)); z-index: -1; transition: all 1s;}
 .shortest .short_span.span1.active { transform: translateX(calc(100vw * -2800 / 1920)); }
@@ -290,7 +290,7 @@ nav ul li a:hover { padding: calc(100vw * 13 / 1920) 0; border-bottom: calc(100v
 .custom .custom_introduction .suggestion2 { width: 100vw; height: 100vh;}
 .custom .custom_introduction .suggestion3 { width: 100vw; height: 100vh;}
 .custom .suggestion_title { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 38 / 1920); color: #272727; text-align: right;}
-.custom .suggestion_info { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 20 / 1920); color: #969696; margin-top: calc(100vw * 20 / 1920); margin-bottom: calc(100vw * 440 / 1920); text-align: right; }
+.custom .suggestion_info { color: #969696; margin-top: calc(100vw * 20 / 1920); margin-bottom: calc(100vw * 440 / 1920); text-align: right; }
 .custom .suggestion_info:nth-last-of-type(1) { margin-bottom: calc(100vw * 180 / 1920);}
 .custom .suggestion_span { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 700 / 1920); letter-spacing: calc(100vw * 25 / 1920); color: rgba(254, 98, 10, 0.1);; position: absolute; transform: translateX(calc(100vw * -5000 / 1920)); z-index: -1; transition: all 1s;}
 .custom .suggestion_span.span1.active { transform: translateX(calc(100vw * 2000 / 1920)); }
