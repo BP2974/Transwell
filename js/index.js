@@ -273,7 +273,7 @@ $(document).ready(function(){
         }
         /* console.log(31900*ratio1) */
         /* offline */
-        if($(window).scrollTop() >= 31100 * ratio1){
+        if($(window).scrollTop() >= 30700 * ratio1){
             $('.offline_wave').css('animation', 'wave 1s forwards');
         } else {
             $('.offline_wave').css('animation', 'none');
