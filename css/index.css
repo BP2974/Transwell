@@ -99,8 +99,8 @@ nav ul li a:hover { padding: calc(100vw * 13 / 1920) 0; border-bottom: calc(100v
 .goals .vision h3 { font-family: 'Pretendard'; font-weight: 600; font-size: calc(100vw * 40 / 1920); color: #FFFFFF; margin-top: calc(100vw * 120 / 1920); }
 .goals .vision p { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 34 / 1920); line-height: 145%; color: #FFFFFF; margin-top: calc(100vw * 55 / 1920); }
 /* .goals .vision p span { color: #0181E9; } */
-.goals img:nth-of-type(1) { position: absolute; top: calc(100vw * 432 / 1920); left: calc(100vw * -400 / 1920);}
-.goals img:nth-of-type(2) { position: absolute; top: calc(100vw * 211 / 1920); left: calc(100vw * 1172 / 1920);}
+.goals img:nth-of-type(1) { position: absolute; top: calc(100vw * 432 / 1920); left: calc(100vw * -400 / 1920); width: calc(100vw * 360 / 1920);}
+.goals img:nth-of-type(2) { position: absolute; top: calc(100vw * 211 / 1920); left: calc(100vw * 1172 / 1920); width: calc(100vw * 391 / 1920);}
 
 
 .naming { height: calc(100vw * 840 / 1920); }
@@ -229,7 +229,7 @@ nav ul li a:hover { padding: calc(100vw * 13 / 1920) 0; border-bottom: calc(100v
 #service { padding-top: calc(100vw * 90 / 1920); }
 
 .trans { text-align: center; margin-bottom: calc(100vw * 500 / 1920);}
-.trans .box { display: inline-block; width: calc(100vw * 26 / 1920); height: calc(100vw * 172 / 1920); background: linear-gradient(180deg, #FE620A 0%, rgba(255, 255, 255, 0) 67.71%); transform: rotate(180deg); margin-bottom: calc(100vw * 20 / 1920); }
+.trans .box { display: inline-block; width: calc(100vw * 26 / 1920); height: calc(100vw * 172 / 1920); background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FE620A 67.71%); margin-bottom: calc(100vw * 20 / 1920); }
 .trans .description { margin-top: calc(100vw * 30 / 1920); margin-bottom: calc(100vw * 20 / 1920); }
 
 
