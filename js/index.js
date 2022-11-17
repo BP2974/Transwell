@@ -8,31 +8,31 @@ $(document).ready(function(){
         AOS.refresh();
     });
 
+
     $(document).mousemove(function(e){
         if($(window).scrollTop() > 800 && e.clientY < 100){
-            $('header').css('top', '0')
-        } else if($(window).scrollTop() <= 800){
             $('header').css('top', '0')
         }
         else {
             $('header').css('top', 'calc(100vw * -80 / 1920)');
         }
     })
+
+
     $(window).scroll(function(){
 
         var ratio1 = 1/1920 * window.innerWidth;
-        /* var ratio2 = 1/1080*document.documentElement.clientHeight;
-        var ratio3 = (ratio1*ratio2) ; */
         
         console.log($(window).scrollTop() * ratio1);
 
-        if($(window).scrollTop() > 800)
+        if($(window).scrollTop() > 800 * ratio1)
         {
             $('header').css('top', 'calc(100vw * -80 / 1920)');
         } else
         {
             $('header').css('top', '0');
         }
+
 
         /* 타이틀 */
         if($(window).scrollTop() > 800 * ratio1)
@@ -80,48 +80,6 @@ $(document).ready(function(){
         {
             $('.title_text').css('margin-top', 'calc(100vw * 144 / 1920)');
         }
-        
-
-        /* if($(window).scrollTop() > 1800)
-        {
-            $(".overview").children(".subject").css('position', 'sticky');
-            $(".first_span").css('position', 'sticky');
-            $('.first_text').addClass('active');
-        } else
-        {
-            $(".overview").children(".subject").css('position', 'absolute');
-            $(".first_span").css('position', 'absolute');
-            $('.first_text').removeClass('active');
-        }
-
-        if($(window).scrollTop() > 2200)
-        {
-            $('.first_text').removeClass('active');
-            $('.second_text').addClass('active');
-        } else 
-        {
-            $('.second_text').removeClass('active');
-        }
-
-        if($(window).scrollTop() > 2600)
-        {
-            $('.third_text').addClass('active');
-            $('.second_text').removeClass('active');
-        } else
-        {
-            $('.third_text').removeClass('active');
-        }
-
-        if($(window).scrollTop()> 3000){
-            $('.third_text').removeClass('active');
-            $(".overview").children(".subject").css('opacity', '0');
-            $(".first_span").css('opacity', '0');
-            
-        }else
-        {
-            $(".overview").children(".subject").css('opacity', '1');
-            $(".first_span").css('opacity', '1');
-        } */
 
         
         /* 스플래시 */
@@ -152,7 +110,7 @@ $(document).ready(function(){
         {
             $('.short_span.span1').removeClass('active');
         }
-
+        
         if($(window).scrollTop() >= 20300 * ratio1){
             $('.shortest_mockup.img1').css('opacity', '0');
             $('.shortest_mockup.img2').css('opacity', '1');
@@ -271,7 +229,8 @@ $(document).ready(function(){
         {
             $('.suggestion_span.span3').removeClass('active');
         }
-        /* console.log(31900*ratio1) */
+
+
         /* offline */
         if($(window).scrollTop() >= 30800 * ratio1){
             $('.offline_wave').css('animation', 'wave 1s forwards');
@@ -280,54 +239,24 @@ $(document).ready(function(){
         }
     });
 
-    $('.color_btn1').click(function(){
-        $('.color_sub').html("밝은 햇살을 담은");
-        $('.color_title').html('SUNLIGHT ORANGE');
-        $('.color_detail').html('C0% M61% Y96% K0%<br/>R254 G90 B10<br/>#FE620A');
-        $(this).addClass('active');
-        $('.slide').addClass('slide1');
-        $('.slide').removeClass('slide2 slide3 slide4');
-        $('.color_btn2').removeClass('active')
-        $('.color_btn3').removeClass('active')
-        $('.color_btn4').removeClass('active')
-        $('.color>.subtitle').removeClass('color2');
-        $('.color>.subtitle').addClass('color1');
-    });
-    $('.color_btn2').click(function(){
-        $('.color_sub').html("공항의 시원함을 담은");
-        $('.color_title').html('AIRPORT BLUE');
-        $('.color_detail').html('C100% M45% Y0% K9%<br/>R1 G129 B233<br/>#0181E9');
-        $(this).addClass('active');
-        $('.slide').addClass('slide2');
-        $('.slide').removeClass('slide1 slide3 slide4');
-        $('.color_btn1').removeClass('active')
-        $('.color_btn3').removeClass('active')
-        $('.color_btn4').removeClass('active')
-        $('.color>.subtitle').removeClass('color1');
-        $('.color>.subtitle').addClass('color2');
-    });
-    $('.color_btn3').click(function(){
-        $('.color_sub').html("사이니지의 명시성");
-        $('.color_title').html('EXPLICIT BLACK');
-        $('.color_detail').html('C0% M0% Y0% K85%<br/>R39 G39 B39<br/>#272727');
-        $(this).addClass('active');
-        $('.slide').addClass('slide3');
-        $('.slide').removeClass('slide1 slide2 slide4');
-        $('.color_btn1').removeClass('active')
-        $('.color_btn2').removeClass('active')
-        $('.color_btn4').removeClass('active')
-    });
-    $('.color_btn4').click(function(){
-        $('.color_sub').html("깔끔하고 담백한");
-        $('.color_title').html('CLEAR WHITE');
-        $('.color_detail').html('C0% M0% Y0% K0%<br/>R255 G255 B255<br/>#FFFFFF');
-        $(this).addClass('active');
-        $('.slide').addClass('slide4');
-        $('.slide').removeClass('slide1 slide2 slide3');
-        $('.color_btn1').removeClass('active')
-        $('.color_btn2').removeClass('active')
-        $('.color_btn3').removeClass('active')
-    });
+    /* color */
+    const sub = ["", "밝은 햇살을 담은", "공항의 시원함을 담은", "사이니지의 명시성", "깔끔하고 담백한"];
+    const title = ['', 'SUNLIGHT ORANGE', 'AIRPORT BLUE', 'EXPLICIT BLACK', 'CLEAR WHITE'];
+    const detail = ['', 'C0% M61% Y96% K0%<br/>R254 G90 B10<br/>#FE620A', 'C100% M45% Y0% K9%<br/>R1 G129 B233<br/>#0181E9', 'C0% M0% Y0% K85%<br/>R39 G39 B39<br/>#272727', 'C0% M0% Y0% K0%<br/>R255 G255 B255<br/>#FFFFFF'];
+
+    for(let i = 1; i < 5; i++){
+        $('.color_btn'+i).click(function(){
+            $('.color_sub').html(sub[i]);
+            $('.color_title').html(title[i]);
+            $('.color_detial').html(detail[i]);
+            $('.select_btn').removeClass('active');
+            $('.color_btn'+i).addClass('active');
+            $('.slide').removeClass('slide1 slide2 slide3 slide4');
+            $('.slide').addClass('slide'+i);
+        })
+    }
+
+    /* keywords */
     $('.legend1').click(function(){
         $('.keywords .keywords_list.key_concept').addClass('active');
         $('.keywords .keywords_list.key_design').addClass('active');
