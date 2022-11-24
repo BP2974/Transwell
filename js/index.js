@@ -10,13 +10,13 @@ $(document).ready(function(){
 
     var ratio1 = 1/1920 * window.innerWidth;
     $('header').css('top', '0');
-    
+
     $(document).mousemove(function(e){
-        if($(window).scrollTop() > 800 * ratio1 && e.clientY < 100 * ratio1){
+        if($(window).scrollTop() <= 800 * ratio1 && e.clientY >= 100 * ratio1){
             $('header').css('top', '0')
         }
         else {
-            $('header').css('top', 'calc(100vw * -80 / 1920)');
+            $('header').css('top', 'calc(100vw * -100 / 1920)');
         }
     })
 
