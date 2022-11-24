@@ -12,7 +12,9 @@ $(document).ready(function(){
     $('header').css('top', '0');
 
     $(document).mousemove(function(e){
-        if($(window).scrollTop() >= 800 * ratio1 && e.clientY >= 100 * ratio1){
+        if($(window).scrollTop() <= 800 * ratio1 && e.clientY <= 100 * ratio1){
+            $('header').css('top', '0')
+        } else if(e.clientY <= 100 * ratio1) {
             $('header').css('top', '0')
         }
         else {
