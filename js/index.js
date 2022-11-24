@@ -8,9 +8,9 @@ $(document).ready(function(){
         AOS.refresh();
     });
 
-    console.log(scrollTop());
     var ratio1 = 1/1920 * window.innerWidth;
-
+    $('header').css('top', '0');
+    
     $(document).mousemove(function(e){
         if($(window).scrollTop() > 800 * ratio1 && e.clientY < 100 * ratio1){
             $('header').css('top', '0')
