@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
     $(document).mousemove(function(e){
-        if($(window).scrollTop() > 800 && e.clientY < 100){
+        if($(window).scrollTop() > 800 * ratio1 && e.clientY < 100){
             $('header').css('top', '0')
         }
         else {
