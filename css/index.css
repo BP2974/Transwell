@@ -23,8 +23,8 @@ ol,ul { list-style: none; }
 header { width: 100vw; height: calc(100vw * 55 / 1920); position: fixed; box-sizing: border-box;  background: rgba(255, 255, 255, 0.438); z-index: 3; transition: all .7s; top: 0; }
 nav { display: flex; justify-content: space-between; }
 nav h1 { height: calc(100vw * 22 / 1920); transition: all 1s; transform-origin: -30%, -30%;}
-nav h1 a { margin-top: calc(100vw * 10 / 1920); height: calc(100vw * 22 / 1920); position: absolute;}
-nav h1 a img { height: calc(100vw * 22 / 1920); }
+nav h1 a { margin-top: calc(100vw * 15 / 1920); height: calc(100vw * 22 / 1920); position: absolute;}
+nav h1 a img { height: calc(100vw * 22 / 1920); position: absolute; }
 nav li { box-sizing: border-box; display: inline-block; padding: calc(100vw * 14 / 1920) calc(100vw * 20 / 1920); font-size: calc(100vw * 20 / 1920); font-family: 'Pretendard'; }
 nav ul li a:hover { padding: calc(100vw * 13 / 1920) 0; border-bottom: calc(100vw * 4 / 1920) solid #0181E9; }
 
