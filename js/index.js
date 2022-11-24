@@ -26,7 +26,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
 
         
-        console.log($(window).scrollTop() * ratio1);
+        //console.log($(window).scrollTop() * ratio1);
 
         if($(window).scrollTop() > 800 * ratio1)
         {
