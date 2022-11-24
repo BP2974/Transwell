@@ -8,9 +8,11 @@ $(document).ready(function(){
         AOS.refresh();
     });
 
+    console.log(scrollTop());
+    var ratio1 = 1/1920 * window.innerWidth;
 
     $(document).mousemove(function(e){
-        if($(window).scrollTop() > 800 * ratio1 && e.clientY < 100){
+        if($(window).scrollTop() > 800 * ratio1 && e.clientY < 100 * ratio1){
             $('header').css('top', '0')
         }
         else {
@@ -21,7 +23,6 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
 
-        var ratio1 = 1/1920 * window.innerWidth;
         
         console.log($(window).scrollTop() * ratio1);
 
