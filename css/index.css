@@ -17,7 +17,7 @@ ol,ul { list-style: none; }
 .description { font-family: 'Pretendard'; font-weight: 600; font-size: calc(100vw * 20 / 1920); line-height: 145%; color: #747474;}
 .part { margin-bottom: calc(100vw * 320 / 1920); }
 .mockup_title { font-family: 'Pretendard'; font-weight: 700; font-size: calc(100vw * 80 / 1920); margin-bottom: calc(100vw * 20 / 1920); line-height: 116.34%; color: #272727; }
-.mockup_subtitle { font-family: 'Pretendard'; font-size: calc(100vw * 60 / 1920); font-weight: 700; color: #272727; margin-top: calc(100vw * 20 / 1920); font-size: calc(100vw * 38 / 1920); }
+.mockup_subtitle { font-family: 'Pretendard'; font-size: calc(100vw * 60 / 1920); font-weight: 700; color: #272727; margin-top: calc(100vw * 20 / 1920); font-size: calc(100vw * 38 / 1920);  }
 
 /* header */
 header { width: 100vw; height: calc(100vw * 55 / 1920); position: fixed; box-sizing: border-box;  background: rgba(255, 255, 255, 0.438); z-index: 3; transition: all .7s; top: 0; }
@@ -326,7 +326,7 @@ nav ul li a:hover { padding: calc(100vw * 13 / 1920) 0; border-bottom: calc(100v
 .information .information_locate2 .locate_text { position: absolute; width: calc(100vw * 399 / 1920); top: calc(100vw * 720 / 1920); right: calc(100vw * -75 / 1920);}
 .information .information_locate3 { position: absolute; top: calc(100vw * 950 / 1920); left: calc(100vw * 203 / 1920);}
 .information .information_locate3 .locate_phone { position: absolute; top: 0; margin-left: calc(100vw * -75 / 1920); }
-.information .information_locate3 .mockup_subtitle { position: absolute; text-align: left; width: calc(100vw * 141 / 1920); top: calc(100vw * 530 / 1920); left: calc(100vw * 505 / 1920);}
+.information .information_locate3 .mockup_subtitle { position: absolute; text-align: left; width: calc(100vw * 300 / 1920); top: calc(100vw * 530 / 1920); left: calc(100vw * 505 / 1920);}
 .information .information_locate3 .description { position: absolute; text-align: left; width: calc(100vw * 400 / 1920); top: calc(100vw * 595 / 1920); left: calc(100vw * 505 / 1920); }
 .information .back_blue { position: absolute; z-index: -1; width: calc(100vw * 407 / 1920); top: calc(100vw * 784 / 1920); right: calc(100vw * 204 / 1920); } 
 .information .back_orange { position: absolute; z-index: -1; width: calc(100vw * 276 / 1920); top: calc(100vw * 1485 / 1920); left: calc(100vw * 318 / 1920); } 
