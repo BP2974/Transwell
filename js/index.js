@@ -251,7 +251,7 @@ $(document).ready(function(){
         $('.color_btn'+i).click(function(){
             $('.color_sub').html(sub[i]);
             $('.color_title').html(title[i]);
-            $('.color_detial').html(detail[i]);
+            $('.color_detail').html(detail[i]);
             $('.select_btn').removeClass('active');
             $('.color_btn'+i).addClass('active');
             $('.slide').removeClass('slide1 slide2 slide3 slide4');
